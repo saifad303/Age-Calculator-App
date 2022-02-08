@@ -40,6 +40,11 @@ class MainActivity : AppCompatActivity() {
             val minutes = TimeUnit.MILLISECONDS.toMinutes(difference)
             val hours = TimeUnit.MILLISECONDS.toHours(difference)
             val days = TimeUnit.MILLISECONDS.toDays(difference)
+			
+			val seconds = TimeUnit.MILLISECONDS.toSeconds(difference)
+            val minutes = TimeUnit.MILLISECONDS.toMinutes(difference)
+            val hours = TimeUnit.MILLISECONDS.toHours(difference)
+            val days = TimeUnit.MILLISECONDS.toDays(difference)
 
             tvSelectedDateInSeconds.text = seconds.toString()
             tvSelectedDateInMinutes.text = minutes.toString()
